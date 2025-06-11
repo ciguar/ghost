@@ -1,13 +1,9 @@
-FROM node:18-alpine
+FROM ghost:5.14.1
 
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
+WORKDIR /var/lib/ghost
 
 COPY . .
 
 RUN chmod +x start.sh
 
-CMD ["sh", "./start.sh"]
+CMD ["./start.sh"]

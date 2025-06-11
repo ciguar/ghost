@@ -1,1 +1,2 @@
-npm start
+#!/bin/sh
+ghost run

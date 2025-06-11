@@ -1,8 +1,6 @@
 {
-  "name": "cigar-cougar",
+  "name": "ghost-on-render",
   "version": "1.0.0",
-  "description": "Ghost blog deployed on Render",
-  "main": "index.js",
   "scripts": {
     "start": "./start.sh"
   },

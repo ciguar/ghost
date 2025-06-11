@@ -1,0 +1,8 @@
+{
+  "name": "cigar-cougar",
+  "version": "1.0.0",
+  "dependencies": {
+    "pg": "^8.0.0",
+    "knex": "^2.0.0"
+  }
+}

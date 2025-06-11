@@ -1,23 +1,23 @@
 services:
-  - type: web
+- type: web
+  name: ghost
+  env: docker
+  autoDeploy: false
+  buildCommand: "npm install"
+  disk:
     name: ghost
-    env: docker
-    autoDeploy: false
-    buildCommand: "npm install"
-    disk:
-      name: ghost
-      mountPath: /var/lib/ghost/content
-      sizeGB: 10
-    envVars:
-      - key: database__client
-        value: postgres
-      - key: database__connection__host
-        value: dpg-d14ed3ruibrs73ac7040-a
-      - key: database__connection__port
-        value: 5432
-      - key: database__connection__user
-        value: ghost_db_x0bx_user
-      - key: database__connection__password
-        value: ifYJGSXYpqQD996nzX1CIiMXBuwmeVYA
-      - key: database__connection__database
-        value: ghost_db_x0bx
+    mountPath: /var/lib/ghost/content
+    sizeGB: 10
+  envVars:
+    - key: database__client
+      value: postgres
+    - key: database__connection__host
+      value: dpg-d14ed3ruibrs73ac7040-a
+    - key: database__connection__port
+      value: 5432
+    - key: database__connection__user
+      value: ghost_db_x0bx_user
+    - key: database__connection__password
+      value: ifYJGSXYpqQD996nzX1CIiMXBuwmeVYA
+    - key: database__connection__database
+      value: ghost_db_x0bx

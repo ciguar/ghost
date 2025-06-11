@@ -1,13 +1,13 @@
-{
-  "name": "ghost-on-render",
-  "version": "1.0.0",
-  "description": "Ghost blog deployed on Render",
-  "main": "index.js",
-  "scripts": {
-    "start": "./start.sh"
-  },
-  "dependencies": {
-    "pg": "^8.11.1",
-    "knex": "^2.0.0"
-  }
-}
+FROM node:18-alpine
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN chmod +x start.sh
+
+CMD ["sh", "./start.sh"]

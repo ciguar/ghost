@@ -1,0 +1,12 @@
+{
+  "database": {
+    "client": "postgres",
+    "connection": {
+      "host": "YOUR_DB_HOST",
+      "port": 5432,
+      "user": "YOUR_DB_USER",
+      "password": "YOUR_DB_PASSWORD",
+      "database": "YOUR_DB_NAME"
+    }
+  }
+}

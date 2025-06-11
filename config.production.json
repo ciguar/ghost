@@ -5,7 +5,7 @@
     "host": "0.0.0.0"
   },
   "database": {
-    "client": "postgres",
+    "client": "mysql",
     "connection": {
       "host": "dpg-d14ed3ruibrs73ac7040-a",
       "port": 5432,

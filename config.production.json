@@ -1,18 +1,12 @@
 {
-  "url": "http://localhost:10000",
+  "url": "https://the-cigar-cougar-experience.onrender.com",
   "server": {
     "port": 10000,
     "host": "0.0.0.0"
   },
   "database": {
-    "client": "mysql",
-    "connection": {
-      "host": "mysql-db",
-      "port": 3306,
-      "user": "admin",
-      "password": "DATABASE_PASSWORD",
-      "database": "DATABASE_NAME"
-    }
+    "client": "pg",
+    "connection": "process.env.DATABASE_URL"
   },
   "mail": {
     "transport": "Direct"

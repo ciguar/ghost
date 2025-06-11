@@ -7,11 +7,10 @@
   "database": {
     "client": "mysql",
     "connection": {
-      "host": "dpg-d14ed3ruibrs73ac7040-a",
-      "port": 5432,
-      "user": "ghost_db_x0bx_user",
+      "host": "mysql",
+      "user": "mysql",
       "password": "3curePass123!",
-      "database": "ghost_db_x0bx"
+      "database": "ghostdb"
     }
   },
   "mail": {
